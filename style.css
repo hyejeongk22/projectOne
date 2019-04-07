@@ -1,0 +1,73 @@
+:root {
+  --colorOne: #d5ecf4;
+  --colorTwo: #e5efd9;
+  --colorThree: #fcf8c0;
+  --colorFour: #ebebeb;
+  --colorFive: #f4c5c3;
+  --colorSix: #e5efd8;
+  --colorSeven: #fcf8c0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.header {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.header h1 {
+  margin-top: 0;
+  font-size: 60px;
+}
+
+.header .header_column {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header_nav span {
+  text-transform: uppercase;
+  text-decoration: underline;
+  display: block;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.header_nav li {
+  margin-bottom: 10px;
+}
+
+.header_nav li:last-child {
+  margin-bottom: 0;
+}
+
+.grid {
+  grid-auto-rows: 30vh;
+}
+
+.grid .grid_item:first-child {
+  grid-row: span 2;
+  background-color: var(--colorOne);
+}
+
+.grid .grid_item:nth-child(2) {
+  grid-area: span 2 / span 2;
+  background-image: url(https://i.pinimg.com/236x/3f/1b/42/3f1b429d1a8821b74ed30c7dde1cf7af.jpg);
+}
